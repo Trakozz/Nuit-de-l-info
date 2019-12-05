@@ -10,11 +10,11 @@ const db = mysql.createConnection({
     host: "localhost",
     database: "nuit_info",
     user: "root",
-    password:""
+    password:"nuitdelinfo"
 });
 db.connect((err) => {
     if(err) {
-        //throw err;
+        throw err;
     }
     console.log("Connected to database");
 })
